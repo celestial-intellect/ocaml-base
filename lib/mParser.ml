@@ -447,7 +447,7 @@ let opt x p =
   p <|>$ x
 
 let option p =
-  p >>= fun r -> return (Some r) <|>$ None
+  p >>= (fun r -> return (Some r)) <|>$ None
 
 let optional p =
   p >>$ () <|>$ ()
