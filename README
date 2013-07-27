@@ -1,0 +1,82 @@
+
+           ocaml-base - standard library extension for OCaml
+
+
+This library is an extension of the OCaml standard library.  It provides
+extended Array, Char, List, and String modules, data structures for
+finite sets and finite maps based on binary trees of bounded balance,
+dynamic arrays, priority queues based on array-embedded heaps, and some
+utilities.
+
+Additionally, ocaml-base contains a rather complete and efficient
+monadic parser combinator librarym, similar to the Parsec library for
+Haskell and the FParsec library for F#.
+
+
+Requirements
+------------
+
+ocaml-base depends on the following tools and libraries:
+
+- Regular expression support in ocaml-base relies on PCRE-OCaml [1].
+  PCRE is currently used only by the CharStream and MParser modules, but
+  the library cannot be loaded without it.
+
+- Compilation is done using the included OCamlMakefile, which requires
+  GNU Make.
+
+- Installation uses the Findlib library manager [2].
+
+ocaml-base has been tested with OCaml 3.10 and 3.12, but it should also
+work with older or newer versions.
+
+
+Installation
+------------
+
+Unpack in any directory, change to the newly created directory:
+
+  $ tar zxvf ocaml-base-<version>.tar.gz
+  $ cd ocaml-base-<version>
+
+Build the libraries (byte-code and native):
+
+  $ make
+
+Build the documentation:
+
+  $ make docs
+
+Install the library with findlib:
+
+  $ make install
+
+Uninstall the library with findlib:
+
+  $ make uninstall
+
+
+Contact information
+-------------------
+
+Bug reports, comments, and patches are welcome.  Please use the contact
+information provided at http://harnold.org/software/.
+
+
+License
+-------
+
+This library is licensed under the terms of the GNU Lesser General
+Public License, version 2.1, with a special exception.  See the
+accompanying LICENSE file for details.
+
+
+References
+----------
+
+[1] Markus Mottl's OCaml software (PCRE-OCaml and OCamlMakefile)
+    http://www.ocaml.info/software.html
+
+[2] Findlib Library Manager
+    http://projects.camlcity.org/projects/findlib.html
+
