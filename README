@@ -9,7 +9,7 @@ dynamic arrays, priority queues based on array-embedded heaps, and some
 utilities.
 
 Additionally, ocaml-base contains a rather complete and efficient
-monadic parser combinator librarym, similar to the Parsec library for
+monadic parser combinator library, similar to the Parsec library for
 Haskell and the FParsec library for F#.
 
 
