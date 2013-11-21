@@ -12,7 +12,7 @@
     The [MParser] module is an OCaml version of the
     {{:http://www.quanttec.com/fparsec}FParsec} library for F# by Stephan
     Tolksdorf and the
-    {{:http://research.microsoft.com/users/daan/parsec.html}Parsec} library
+    {{:http://legacy.cs.uu.nl/daan/parsec.html}Parsec} library
     for Haskell by Daan Leijen.  The interface of the [MParser] module is very
     similar to the interfaces of Parsec and FParsec.  For this reason, we keep
     the documentation here rather terse.  See the excellent documentation of
